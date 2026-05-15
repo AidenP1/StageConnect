@@ -1,0 +1,28 @@
+.role-choice {
+  display: flex;
+  gap: 12px;
+}
+
+.role-card {
+  flex: 1;
+  padding: 16px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text);
+  transition: border-color 0.2s, background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-card:hover {
+  border-color: var(--primary);
+}
+
+.role-card.active {
+  border-color: var(--primary);
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--primary);
+}

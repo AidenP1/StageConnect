@@ -1,0 +1,41 @@
+.navbar-custom {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+}
+
+.brand-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+
+.navbar-custom .nav-link {
+  color: var(--text) !important;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.navbar-custom .nav-link:hover {
+  background-color: var(--bg-secondary);
+}
+
+.navbar-actions {
+  flex-wrap: wrap;
+}
+
+.navbar-toggler {
+  border-color: var(--border) !important;
+}
+
+.navbar-toggler-icon {
+  filter: none;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
+}

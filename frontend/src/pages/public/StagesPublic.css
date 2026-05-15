@@ -1,0 +1,23 @@
+.stages-public-page {
+  min-height: 60vh;
+}
+
+.stages-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.filtres-zone {
+  background-color: var(--bg-card);
+}
+
+.resultat-count {
+  font-size: 0.9rem;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
