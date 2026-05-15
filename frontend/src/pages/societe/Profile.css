@@ -1,0 +1,28 @@
+@import '../etudiant/Profile.css';
+
+/* logo carré pour les sociétés */
+.profile-avatar-square {
+  border-radius: 12px !important;
+}
+
+/* liste d'infos rapides */
+.profile-info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-info-list li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.profile-info-list i {
+  width: 18px;
+  text-align: center;
+}

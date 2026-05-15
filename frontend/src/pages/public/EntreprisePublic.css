@@ -1,0 +1,257 @@
+/* ── Banner ── */
+.ep-banner {
+  height: 180px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 60%, #60a5fa 100%);
+  position: relative;
+}
+
+.ep-back-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+/* ── Header container (overlaps banner) ── */
+.ep-header-container {
+  margin-top: -60px;
+  padding-bottom: 40px;
+}
+
+.ep-header {
+  padding: 0 24px 24px;
+  position: relative;
+}
+
+/* ── Logo (overlapping) ── */
+.ep-logo-wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.ep-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  border: 4px solid var(--bg-card);
+  object-fit: contain;
+  background: var(--bg-card);
+  margin-top: -45px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.ep-logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+}
+
+/* ── Header body ── */
+.ep-header-body {
+  width: 100%;
+}
+
+.ep-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ep-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.ep-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.ep-meta-item {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ep-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.ep-badge-approved {
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .ep-badge-approved {
+  background: rgba(22, 163, 74, 0.2);
+  color: #4ade80;
+}
+
+/* ── Tabs ── */
+.ep-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.ep-tab {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ep-tab:hover {
+  color: var(--text);
+}
+
+.ep-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 600;
+}
+
+/* ── Content ── */
+.ep-content {
+  min-height: 200px;
+}
+
+.ep-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Info table (About tab) ── */
+.ep-info-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.ep-info-row:last-child {
+  border-bottom: none;
+}
+
+.ep-info-label {
+  color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.ep-info-value {
+  color: var(--text);
+  text-align: right;
+  font-weight: 500;
+}
+
+/* ── Rating bars ── */
+.ep-rating-bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ep-rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.ep-rating-bar-label {
+  width: 28px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.ep-rating-bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ep-rating-bar-fill {
+  height: 100%;
+  background: #f59e0b;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.ep-rating-bar-count {
+  width: 20px;
+  color: var(--text-muted);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ── Reviewer avatar ── */
+.ep-reviewer-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+/* ── Empty state ── */
+.ep-empty {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 576px) {
+  .ep-banner { height: 120px; }
+  .ep-logo { width: 70px; height: 70px; margin-top: -35px; }
+  .ep-name { font-size: 1.2rem; }
+  .ep-tab { padding: 10px 12px; font-size: 0.8rem; }
+  .ep-header-top { flex-direction: column; }
+}
